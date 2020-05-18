@@ -1,0 +1,23 @@
+# kubectl create -f prod-definition.yml
+
+apiversion: v1 # tum tanimlama dokumanlarinda en basta olur
+kind: Pod
+
+metadata:
+  name: myapp-pord
+  labels:
+    app: my-app
+    type: front-end # tag
+
+spec:
+  containers:
+    - name: nginx-container
+      image: nginx
+      prorts:
+        - containerPort:80
+      env: # env variables
+        - name: APP_COLOR  # pain key value
+          value: pink
+          #valueFrom:
+          #  configMapKeyRef: # configMap
+          #  secretKeyRef: # secret

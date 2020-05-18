@@ -1,0 +1,21 @@
+# kubectl create -f prod-definition.yml
+
+apiversion: v1 # tum tanimlama dokumanlarinda en basta olur
+kind: Pod
+
+metadata:
+  name: myapp-pord
+  labels:
+    app: my-app
+    type: front-end # tag
+
+spec:
+  containers:
+    - name: nginx-container
+      image: nginx
+      command: ["sleep"] # command arguments
+      args: ["10"] # contaniner arguments
+      prorts:
+        - containerPort:80
+    - name: redis
+      
