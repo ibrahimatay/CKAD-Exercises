@@ -1,2 +1,7 @@
-# Kubernetes-YAML-Templates
-Kubernetes YAML Templates 
+# Kubernetes Manifests 
+
+- POD
+- Deployment
+- Namespace
+- Config
+- Resource
