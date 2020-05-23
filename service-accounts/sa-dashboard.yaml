@@ -1,0 +1,10 @@
+# kubectl create sa sa-dashboard
+# kubectl create -f sa-dashboard.yaml
+
+apiVersion: v1
+kind: ServiceAccount
+
+metadata:
+  name: sa-dashboard
+
+automountServiceAccountToken: false
