@@ -15,4 +15,10 @@ spec:
       image: nginx
       prorts:
         - containerPort:80
-      
+      resource:
+        limits:
+          memory: "1Gi"
+          cpu: "1"
+        requests:
+          memory: "1Gi"
+          cpu: "1"
