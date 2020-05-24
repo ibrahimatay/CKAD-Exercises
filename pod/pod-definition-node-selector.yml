@@ -1,0 +1,21 @@
+# kubectl create -f prod-definition.yml
+# kubectl label node-1 size=Large
+
+apiversion: v1 # tum tanimlama dokumanlarinda en basta olur
+kind: Pod
+
+metadata:
+  name: myapp-pord
+  labels:
+    app: my-app
+    type: front-end # tag
+
+spec:
+  containers:
+    - name: nginx-container
+      image: nginx
+      prorts:
+        - containerPort:80
+
+  nodeSelector:
+    size: Large # node label      
