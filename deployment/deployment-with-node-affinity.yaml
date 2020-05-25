@@ -1,0 +1,29 @@
+# kubectl create -f deployment-with-node-affinity.yaml
+
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: blue
+spec:
+  selector:
+    matchLabels:
+      run: nginx
+  replicas: 6
+  template:
+    metadata:
+      labels:
+        run: nginx
+    spec:
+      affinity:
+        nodeAffinity:
+          requiredDuringSchedulingIgnoredDuringExecution:
+            nodeSelectorTerms:
+            - matchExpressions:
+              - key: color
+                operator: In
+                values:
+                - blue
+            # topologyKey: "kubernetes.io/hostname"
+      containers:
+      - name: nginx
+        image: nginx
