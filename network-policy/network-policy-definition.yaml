@@ -1,0 +1,28 @@
+# kubectl create -f network-policy-definition.yaml
+
+apiVersion: networking.k8s.io/v1
+kind: NetworkPolicy
+metadata:
+  name: test-network-policy
+spec:
+  podSelector:
+    matchLabels:
+      role: db
+  policyTypes:
+  - Ingress
+  #- Egress
+  ingress:
+  - from:
+    - podSelector:
+        matchLabels:
+          name: frontend
+    ports:
+    - protocol: TCP
+      port: 3306
+  #egress:
+  #- to:
+  #  - ipBlock:
+  #      cidr: 10.0.0.0/24
+  #  ports:
+  #  - protocol: TCP
+  #    port: 5978
