@@ -1,0 +1,23 @@
+# kubectl create -f pod-definition-with-volume.yml
+
+apiversion: v1 # tum tanimlama dokumanlarinda en basta olur
+kind: Pod
+
+metadata:
+  name: myapp-pord
+  labels:
+    app: my-app
+    type: front-end # tag
+
+spec:
+  containers:
+    - name: nginx-container
+      image: nginx
+      prorts:
+        - containerPort:80
+
+  volumes:
+    - name: data-volume
+      hostPath:
+        path: /data
+        type: Directory    

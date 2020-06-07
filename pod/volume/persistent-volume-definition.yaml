@@ -1,0 +1,14 @@
+# kubectl create -f persistent-volume-definition.yaml
+
+apiVersion: v1
+kind: PersistentVolume
+
+metadata:
+  name: persistent-volume01
+
+spec:
+  accessModes:
+    - ReadWriteOnce
+  
+  capacity:
+    storge: 1Gi
