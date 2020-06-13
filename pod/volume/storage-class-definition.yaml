@@ -1,0 +1,14 @@
+# kubectl create -f storage-class-definition.yaml
+# ref: https://kubernetes.io/docs/concepts/storage/storage-classes/
+
+apiVersion: storage.k8s.io/v1
+kind: StorageClass
+
+metadata:
+  name: google-storage
+
+provisioner: kubernetes.io/gce-pd
+
+parameters:
+  type: pd-standard
+  replication-type: none
