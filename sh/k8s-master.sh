@@ -1,3 +1,5 @@
+hostnamectl set-hostname 'k8s-master'
+ 
 yum update -y 
 
 sudo vi /etc/hosts
