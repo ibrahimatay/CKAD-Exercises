@@ -20,3 +20,6 @@ sudo docker swarm join
 docker swarm join-token worker # https://docs.docker.com/engine/swarm/join-nodes/
 
 sudo docker stack deploy --compose-file=agent-stack.yml portainer-agent 
+
+curl -L https://downloads.portainer.io/agent-stack.yml -o agent-stack.yml 
+sudo docker stack deploy --compose-file=agent-stack.yml portainer-agent # in swarm master machine
