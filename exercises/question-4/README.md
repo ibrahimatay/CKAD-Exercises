@@ -52,6 +52,5 @@ kubectl create -f .\app1-pod.yaml
 
 ## Step 3
 ```sh
-kubectl get po app1 mage=Ifccncf/arg-outp
--o json > app1.json
+kubectl get po app1 mage=Ifccncf/arg-outp -o json > app1.json
 ```
