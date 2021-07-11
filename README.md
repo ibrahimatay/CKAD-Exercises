@@ -1,7 +1,7 @@
 # Kubernetes Notes 
 
-- Exercise
-- POD
+- Exercises
+- POD (Probes, affinity, volume, limits, policy & secutiry context)
 - Deployment
 - Namespace
 - Config
