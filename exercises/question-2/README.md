@@ -6,10 +6,13 @@ You sometimes need to observe a pod's logs and write those logs to a file for fu
 - Retrieve all currently available application logs from the running pod and store them in the file
 log_Output.txt, which has already been created
 
+## Step 1
 ```sh
 kubectl create -f .\counter.yaml
 pod/counter created
-
+```
+## Step 2
+```sh
 kubectl logs counter
 Sat Jul 10 16:04:12 UTC 2021
 Sat Jul 10 16:04:13 UTC 2021
@@ -25,7 +28,10 @@ Sat Jul 10 16:04:22 UTC 2021
 Sat Jul 10 16:04:23 UTC 2021
 Sat Jul 10 16:04:24 UTC 2021
 Sat Jul 10 16:04:25 UTC 2021
+```
 
+## Step 3
+```sh
 kubectl logs counter > log_Output.txt
 
 cat .\log_Output.txt
@@ -43,5 +49,4 @@ Sat Jul 10 16:04:22 UTC 2021
 Sat Jul 10 16:04:23 UTC 2021
 Sat Jul 10 16:04:24 UTC 2021
 Sat Jul 10 16:04:25 UTC 2021
-kubectl logs counter > log_Output.txt
 ```
