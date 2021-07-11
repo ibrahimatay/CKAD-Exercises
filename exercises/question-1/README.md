@@ -72,7 +72,7 @@ spec:
         app: frontend
     spec:
       containers:
-      - env:
+      - env: # modified level
         - name: NGINX_PORT
           value: "8080"
         image: lfccncf/nginx:1.13.7

@@ -1,3 +1,3 @@
 # CKAD Exercies
 
-[Question - 1](/question-1/) 
+[Question - 1](/exercises/question-1) 
