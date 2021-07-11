@@ -16,7 +16,7 @@ secret/another-secret created
 ```sh
 kubectl run nginx-secret --image=nginx --dry-run=client -o yaml
 ```
-## Step 3
+
 ```yaml
 apiVersion: v1
 kind: Pod
@@ -34,7 +34,7 @@ spec:
   restartPolicy: Always  
 ```
 
-## Step 4
+## Step 3
 ```yaml
 apiVersion: v1
 kind: Pod
