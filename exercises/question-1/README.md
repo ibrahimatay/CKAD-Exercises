@@ -80,3 +80,7 @@ spec:
         ports:  
           - containerPort: 8080
 ```
+
+## Reference
+- [Define Environment Variables for a Container](https://kubernetes.io/docs/tasks/inject-data-application/define-environment-variable-container/)
+- [how to pass environment variable in kubectl deployment? - Stackoverflow](https://stackoverflow.com/questions/56003777/how-to-pass-environment-variable-in-kubectl-deployment/68335855#68335855)
