@@ -2,5 +2,5 @@
 
 |Command|Description           |
 |-------|----------------------|
-|lvs    | logical volume size  |
-|pvs    | physical volume size |
+|lvs    | Logical volume size  |
+|pvs    | Physical volume size |
