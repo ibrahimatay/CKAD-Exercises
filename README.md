@@ -1,6 +1,6 @@
 # CKAD Exercises
 
-This repository contains helpful exercises for preparing the Certified [Certified Kubernetes Application Developer (CKAD)](https://www.cncf.io/certification/ckad/) exam.
+This repository contains helpful exercises for preparing for the [Certified Kubernetes Application Developer (CKAD)](https://www.cncf.io/certification/ckad/) exam.
 
 - [Question - 1](/exercises/question-1) 
 - [Question - 2](/exercises/question-2) 
