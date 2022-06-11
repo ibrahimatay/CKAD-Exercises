@@ -1,10 +1,12 @@
-# Question - 2
+# Exercise - 2
 
 You sometimes need to observe a pod's logs and write those logs to a file for further analysis.
 
 - Deploy the counter pod to the cluster using the provided YAML spec file at counter.yaml
 - Retrieve all currently available application logs from the running pod and store them in the file
 log_Output.txt, which has already been created
+
+# Solution
 
 ## Step 1
 ```sh

@@ -1,4 +1,4 @@
-# Question - 5
+# Exercise - 5
 
 A project that you are working on has a requirement for persistent data to be available.
 
@@ -7,6 +7,8 @@ A project that you are working on has a requirement for persistent data to be av
 - Create a PefsissentVolumeClaim named task-pv-claim that requests a volume of at least 100Mi and specifies an access mode of ReadWriteOnce
 - Create a pod that uses the PersistentVolmeClaim as a volume with a label app: my-storage-app mounting the resulting volume to a mountPath
 /usr/share/nginx/html inside the pod
+
+# Solution
 
 ## Step 1
 ```sh
@@ -71,6 +73,6 @@ spec:
       claimName: task-pvc-volume
 ```
 
-## Reference
+# Reference
 - [Create a PersistentVolumeClaim](https://kubernetes.io/docs/tasks/configure-pod-container/configure-persistent-volume-storage/#create-a-persistentvolumeclaim)
 - [Why does a match Persistent Volume not bind to a match Persistent Volume Claim (using k3s)? - Stackoverflow](https://stackoverflow.com/questions/66042100/why-does-a-match-persistent-volume-not-bind-to-a-match-persistent-volume-claim)

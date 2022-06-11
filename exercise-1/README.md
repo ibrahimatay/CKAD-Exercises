@@ -1,4 +1,4 @@
-# Question - 1
+# Exercise - 1
 
 Create a new deployment for running.nginx with the following parameters;
 
@@ -8,13 +8,12 @@ Create a new deployment for running.nginx with the following parameters;
 - Configure the pod with a container image of lfccncf/nginx:1.13.7
 - Set an environment variable of NGINX_PORT=8080 and also expose that port for the container above.
 
-See the solution below.
+# Solution
 
 ## Step 1
 ```sh
 kubectl create ns kdpd00201
 namespace/kdpd00201 created
-
 
 kubectl create deploy frontend --image=lfccncf/nginx:1.13.7 --port=8080 --namespace=kdpd00201 --replicas=4  --dry-run=client -o yaml
 ```
@@ -49,7 +48,7 @@ spec:
         resources: {}
 ```
 
-Step 3
+## Step 3
 ```yml
 apiVersion: apps/v1
 kind: Deployment
@@ -81,6 +80,6 @@ spec:
           - containerPort: 8080
 ```
 
-## Reference
+# Reference
 - [Define Environment Variables for a Container](https://kubernetes.io/docs/tasks/inject-data-application/define-environment-variable-container/)
 - [how to pass environment variable in kubectl deployment? - Stackoverflow](https://stackoverflow.com/questions/56003777/how-to-pass-environment-variable-in-kubectl-deployment/68335855#68335855)

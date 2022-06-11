@@ -1,4 +1,4 @@
-# Question - 8
+# Exercise - 8
 
 You are required to create a pod that requests a certain amount of CPU and memory, so it gets
 scheduled to-a node that has those resources available.

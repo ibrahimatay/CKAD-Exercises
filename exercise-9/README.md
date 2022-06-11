@@ -1,4 +1,4 @@
-# Question - 9
+# Exercise - 9
 
 You are tasked to create a ConfigMap and consume the ConfigMap in a pod using a volume mount.
 

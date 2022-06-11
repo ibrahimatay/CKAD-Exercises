@@ -1,4 +1,4 @@
-# Question - 7
+# Exercise - 7
 
 A web application requires a specific version of redis to be used as a cache.
 
@@ -9,7 +9,7 @@ Create a pod with the following characteristics, and leave it running when compl
 - Use the Ifccncf/redis image with the 3.2 tag
 - Expose port 6379
 
-## Step 1
+# Solution
 
 ```sh
 [node1 ~]$ kubectl create ns web

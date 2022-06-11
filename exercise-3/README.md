@@ -1,10 +1,12 @@
-# Question - 3
+# Exercise - 3
 
 You are tasked to create a secret and consume the secret in a pod using environment variables as follow;
 
 - Create a secret named another-secret with a key/value pair; key1/value4
 - Start an nginx pod named nginx-secret using container image nginx, and add an environment variable exposing the value of the secret key key 1,
 using COOL_VARIABLE as the name for the environment variable inside the pod
+
+# Solution
 
 ## Step 1
 ```sh
@@ -58,5 +60,5 @@ spec:
   restartPolicy: Always  
 ```
 
-## Reference
+# Reference
 - [Using Secrets as environment variables](https://kubernetes.io/docs/concepts/configuration/secret/#using-secrets-as-environment-variables)

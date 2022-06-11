@@ -1,4 +1,4 @@
-# Question - 4
+# Exercise - 4
 
 Anytime a team needs to run a container on Kubernetes they will need to define a pod within which to run the container.
 
@@ -6,6 +6,8 @@ Anytime a team needs to run a container on Kubernetes they will need to define a
 - Create the pod with the kubect1 command using the YAML file created in the previous step
 - When the pod is running display summary data about the pod in JSON format using the kubect1 command and redirect the output to a file named out1.json
 - All of the files you need to work with have been created, empty, for your convenience
+
+# Solution
 
 ## Step 1
 ```sh
