@@ -1,15 +1,11 @@
-# Kubernetes Notes 
+# CKAD Exercises
 
-- Exercises (CKA & CKAD Crack)
-- POD (Probes, Affinity, Volume, Limits, Policy & Secutiry Context)
-- Deployment (Deployment, ReplicationController & ReplicaSet)
-- Namespace
-- Config (ConfigMap & Secret)
-- Resource (ResoruceQuota & LimitRange-CPU-Memory)
-- Job (CronJob & Job)
-- Network Policy
-- Service
-- Service Account (Role, ServiceAccount & RoleBinding)
-- Ingress
-- Resource (Compute Quota, Limit range memory & cpu)
-- Install Scripts (Cluster, docker & redhat configuration)
+- [Question - 1](/exercises/question-1) 
+- [Question - 2](/exercises/question-2) 
+- [Question - 3](/exercises/question-3) 
+- [Question - 4](/exercises/question-4) 
+- [Question - 5](/exercises/question-5) 
+- [Question - 6](/exercises/question-6) 
+- [Question - 7](/exercises/question-7) 
+- [Question - 8](/exercises/question-8) 
+- [Question - 9](/exercises/question-9) 

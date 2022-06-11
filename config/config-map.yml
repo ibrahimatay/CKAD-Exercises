@@ -1,8 +1,0 @@
-apiVersion: v1
-kind: ConfigMap
-metadata:
-  name: app-config
-
-data:
-  APP_COLUR: blue
-  APP_MODE: PROD
