@@ -9,11 +9,24 @@ log_Output.txt, which has already been created
 # Solution
 
 ## Step 1
+```yaml
+apiVersion: v1
+kind: Pod
+metadata:
+  name: counter
+spec:
+  containers:
+  - name: busybox
+    image: busybox
+    args: [/bin/sh, -c, 'while true; do echo $(date); sleep 1; done']
+
+```
+## Step 2
 ```sh
 kubectl create -f .\counter.yaml
 pod/counter created
 ```
-## Step 2
+## Step 3
 ```sh
 kubectl logs counter
 Sat Jul 10 16:04:12 UTC 2021
