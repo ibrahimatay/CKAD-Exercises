@@ -12,4 +12,8 @@ This repository contains helpful exercises for preparing for the [Certified Kube
 - [Exercise - 8](/exercise-8) 
 - [Exercise - 9](/exercise-9) 
 
+# Playgrounds
+
+- [Katacoda](https://www.katacoda.com/courses/kubernetes/playground)
+- [Play with K8s](https://labs.play-with-k8s.com/)
 
