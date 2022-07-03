@@ -45,7 +45,7 @@ Sat Jul 10 16:04:24 UTC 2021
 Sat Jul 10 16:04:25 UTC 2021
 ```
 
-## Step 3
+## Step 4
 ```sh
 kubectl logs counter > log_Output.txt
 
