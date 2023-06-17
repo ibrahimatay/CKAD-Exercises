@@ -6,7 +6,7 @@ Create a pod with the following characteristics, and leave it running when compl
 - The pod must run in the web namespace.
 - The namespace has already been created
 - The name of the pod should be cache.
-- Use the Ifccncf/redis image with the 3.2 tag
+- Use the lfccncf/redis image with the 3.2 tag
 - Expose port 6379
 
 # Solution
@@ -22,7 +22,7 @@ kube-public       Active   100s
 kube-system       Active   100s
 web               Active   10s
 
-[node1 ~]$ kubectl run cache --image=Ifccnf/redis:3.2 --port=6379 -n web
+[node1 ~]$ kubectl run cache --image=lfccncf/redis:3.2 --port=6379 -n web
 pod/cache created
 
 ```
