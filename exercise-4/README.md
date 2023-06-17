@@ -11,7 +11,7 @@ Anytime a team needs to run a container on Kubernetes they will need to define a
 
 ## Step 1
 ```sh
-kubectl run app1 --image=Ifccncf/arg-output --dry-run=client -o yaml
+kubectl run app1 --image=lfccncf/arg-output --dry-run=client -o yaml
 ```
 
 ```yaml
@@ -24,7 +24,7 @@ metadata:
   name: app1
 spec:
   containers:
-  - image: Ifccncf/arg-output
+  - image: lfccncf/arg-output
     name: app1
     resources: {}
   dnsPolicy: ClusterFirst    
@@ -43,7 +43,7 @@ metadata:
   name: app1
 spec:
   containers:
-  - image: Ifccncf/arg-output
+  - image: lfccncf/arg-output
     name: app1
     args: ["-lines", "56", "-F"]
 ```
@@ -54,5 +54,5 @@ kubectl create -f .\app1-pod.yaml
 
 ## Step 3
 ```sh
-kubectl get po app1 mage=Ifccncf/arg-outp -o json > app1.json
+kubectl get po app1 -o json > app1.json
 ```
