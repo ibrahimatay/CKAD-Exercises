@@ -1,40 +1,51 @@
-# Exercise - 9
+# Exercise - 10
 
-You are tasked to create a ConfigMap and consume the ConfigMap in a pod using a volume mount.
+Developers occasionally need to submit pods that run periodically.
 
-- Create a ConfigMap named another-config containing the key/value pair: key4/value3
-- start a pod named nginx-configmap containing a single container using the nginx image, and mount the key you just created into the pod under directory /also/a/path
+Follow the steps below to create a pod that will start at a predetermined time and which runs to completion only once each time it is started:
+
+- Create a YAML formatted k8s manifest /opt/KDPD00301/peridic.yaml that runs the following shell command: date in a single busybox container. The command should run every minute and must be complete within 22 seconds or be terminated k8s. The Cronjob name and container name should both be hello.
+- Create the resource in the above manifest and verify that job executes successfully at least once.
 
 # Solution
 
 ```sh
-controlplane $ kubectl create configmap another-config --from-literal=key4=value3
-configmap/another-config created
-
-controlplane $ kubectl run nginx-configmap --image=nginx --dry-run=client -o yaml > nginx-configmap.yaml
-controlplane $ vi nginx-configmap.yaml 
-
-controlplane $ kubectl create -f nginx-configmap.yaml 
-
+kubectl create cronjob hello --image=busybox --schedule "* * * * *" --dry-run=client -o yaml > periodic.yaml
 ```
 
 ```yaml
-apiVersion: v1
-kind: Pod
+apiVersion: batch/v1
+kind: CronJob
 metadata:
   creationTimestamp: null
-  labels:
-    run: nginx-configmap
-  name: nginx-configmap
+  name: hello
 spec:
-  containers:
-  - image: nginx
-    name: nginx-configmap
-    volumeMounts:
-    - name: my-volume
-      mountPath: /also/a/path
-  volumes:
-  - name: my-volume
-      configMap:
-        name: another-config
+  jobTemplate:
+    metadata:
+      creationTimestamp: null
+      name: hello
+    spec:
+      template:
+        metadata:
+          creationTimestamp: null
+        spec:
+          containers:
+          - image: busybox
+            name: hello
+            resources: {}
+          restartPolicy: Never
+  schedule: '*/1 * * * *'
+  startingDeadlineSeconds: 22
+  concurrencyPolicy: Allow
+status: {}
+```
+
+```sh
+PS C:\> kubectl create -f .\periodic.yaml
+cronjob.batch/hello created
+
+PS C:\> kubectl get cronjob
+NAME    SCHEDULE      SUSPEND   ACTIVE   LAST SCHEDULE   AGE
+hello   */1 * * * *   False     1        1s              51s
+
 ```
