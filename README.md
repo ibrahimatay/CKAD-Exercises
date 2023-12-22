@@ -17,6 +17,5 @@ Practice materials and exercises for preparing for the Certified Kubernetes Appl
 
 # Playgrounds
 
-- [Katacoda](https://www.katacoda.com/courses/kubernetes/playground)
 - [Play with K8s](https://labs.play-with-k8s.com/)
 
