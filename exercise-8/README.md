@@ -33,6 +33,7 @@ spec:
   containers:
   - image: nginx
     name: nginx-resources
+    resources:
        requests:
         memory: "1Gi"
         cpu: "200m"  
