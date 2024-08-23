@@ -15,8 +15,11 @@ Practice materials and exercises for preparing for the Certified Kubernetes Appl
 - [Exercise - 9](/exercise-9) 
 - [Exercise - 10](/exercise-10) 
 
+# Playgrounds
+- [Play with K8s](https://labs.play-with-k8s.com/)
+- [Killer Shell: CKAD Simulator](https://killer.sh/ckad)
+
 # Notes
-- [Playgrounds - Play with K8s](https://labs.play-with-k8s.com/)
+- [Official Kubernetes Documentation](https://kubernetes.io/docs/)
 - [Kubectl Commands](https://kubernetes.io/docs/reference/generated/kubectl/kubectl-commands)
 - [Research paper describing Borg](https://research.google.com/pubs/pub43438.html)
-- [Official Kubernetes Documentation](https://kubernetes.io/docs/)
