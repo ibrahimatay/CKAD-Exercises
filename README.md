@@ -22,4 +22,4 @@ Practice materials and exercises for preparing for the Certified Kubernetes Appl
 # Notes
 - [Official Kubernetes Documentation](https://kubernetes.io/docs/)
 - [Kubectl Commands](https://kubernetes.io/docs/reference/generated/kubectl/kubectl-commands)
-- [Research paper describing Borg](https://research.google.com/pubs/pub43438.html)
+- [Research Papers](docs/)
