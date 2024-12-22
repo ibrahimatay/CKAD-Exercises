@@ -17,27 +17,25 @@ kubectl create cronjob hello --image=busybox --schedule "* * * * *" --dry-run=cl
 apiVersion: batch/v1
 kind: CronJob
 metadata:
-  creationTimestamp: null
   name: hello
 spec:
+  # Run every minute
+  schedule: "* * * * *"
+  # Optional: Keep fewer old jobs to reduce clutter
+  successfulJobsHistoryLimit: 1
+  failedJobsHistoryLimit: 1
+
   jobTemplate:
-    metadata:
-      creationTimestamp: null
-      name: hello
     spec:
+      # Force the job to complete within 22 seconds or get terminated
+      activeDeadlineSeconds: 22
       template:
-        metadata:
-          creationTimestamp: null
         spec:
-          containers:
-          - image: busybox
-            name: hello
-            resources: {}
           restartPolicy: Never
-  schedule: '*/1 * * * *'
-  startingDeadlineSeconds: 22
-  concurrencyPolicy: Allow
-status: {}
+          containers:
+            - name: hello
+              image: busybox
+              command: ["sh", "-c", "date"]
 ```
 
 ```sh
