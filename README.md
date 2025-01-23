@@ -20,6 +20,7 @@ Practice materials and exercises for preparing for the Certified Kubernetes Appl
 # Playgrounds
 - [Play with K8s](https://labs.play-with-k8s.com/)
 - [Killer Shell: CKAD Simulator](https://killer.sh/ckad)
+- [Kind](https://kind.sigs.k8s.io/)
 
 # Notes
 - [Official Kubernetes Documentation](https://kubernetes.io/docs/)
