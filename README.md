@@ -16,6 +16,7 @@ Practice materials and exercises for preparing for the Certified Kubernetes Appl
 - [Exercise - 8](/exercise-8) 
 - [Exercise - 9](/exercise-9) 
 - [Exercise - 10](/exercise-10) 
+- [Exercise - 11](/exercise-11) 
 
 # Playgrounds
 - [Play with K8s](https://labs.play-with-k8s.com/)

@@ -1,4 +1,4 @@
-# Exercise - 11
+# Exercise - 10
 A pod is running on the cluster but it is not responding.
 
 The desired behavior is to have k8s reset the pod when an endpoint returns an HTTP 500 on the /healthz endpoint. The service probe-pod, should never send traffic to the pod while it is failing. Please complete the following:
