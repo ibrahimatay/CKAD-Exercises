@@ -1,6 +1,6 @@
 # CKAD Exercises
 
-Practice materials and exercises for preparing for the Certified Kubernetes Application Developer (CKAD) exam. These resources are designed to help individuals gain the necessary knowledge and skills to successfully complete the CKAD exam and earn their certification.
+Practice materials and exercises are needed to prepare for the Certified Kubernetes Application Developer (CKAD) exam. These resources are designed to help individuals gain the necessary knowledge and skills to complete the CKAD exam and earn their certification successfully.
 
 ****Note***: Continuous improvements and bug fixes are made within the repository to produce better solutions.*
 
@@ -22,6 +22,7 @@ Practice materials and exercises for preparing for the Certified Kubernetes Appl
 - [Play with K8s](https://labs.play-with-k8s.com/)
 - [Killer Shell: CKAD Simulator](https://killer.sh/ckad)
 - [Kind](https://kind.sigs.k8s.io/)
+- [The Cloud Native Playground](https://play.meshery.io/)
 
 # Notes
 - [Official Kubernetes Documentation](https://kubernetes.io/docs/)
