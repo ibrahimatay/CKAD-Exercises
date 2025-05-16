@@ -23,9 +23,9 @@ Practice materials and exercises are needed to prepare for the Certified Kuberne
 - [Killer Shell: CKAD Simulator](https://killer.sh/ckad)
 - [Kind](https://kind.sigs.k8s.io/)
 - [The Cloud Native Playground](https://play.meshery.io/)
-- [Kubernetes Production Issues Database](https://k8s-issues.purutuladhar.com/)
 
 # Notes
 - [Official Kubernetes Documentation](https://kubernetes.io/docs/)
 - [Kubectl Commands](https://kubernetes.io/docs/reference/generated/kubectl/kubectl-commands)
 - [Research Papers](docs/)
+- [Kubernetes Production Issues Database](https://k8s-issues.purutuladhar.com/)
